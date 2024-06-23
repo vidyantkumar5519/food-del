@@ -1,0 +1,87 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px; /* Added padding for better layout */
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-weight: 500;
+    text-align: left;
+}
+
+.explore-menu-text {
+    max-width: 60%;
+    color: #808080; /* Changed 'columns' to 'color' */
+    text-align: left;
+}
+
+.explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+    padding-bottom: 10px; /* Added padding to avoid content cut-off */
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-menu-list-item img {
+    width: 10vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    border: 0.2px solid tomato;
+}
+
+.explore-menu-list-item img:hover {
+    transform: scale(1.01);
+   /* Added scale effect on hover */
+}
+
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+@media (max-width:1050px) {
+    .explore-menu-text{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    
+}
+
+@media (max-width:750px) {
+    .explore-menu-text{
+        width: 100%;
+        font-size: 5px;
+        white-space: normal; /* Allows the text to wrap */
+        word-wrap: break-word;
+    }
+    
+    
+}
